@@ -70,20 +70,33 @@ def getDifference(dt1, dt2):
 
 # Driver Code
 print("*"*70)
+
 print("Welcome to Program that calculate from how many days person is alive")
+
 print("*"*70)
+
 print()
 print("To enter the dates press 1")
+
 print("TO exit from program press 2")
+
 print()
+
 ch = eval(input("Please enter your choice: "))
+
 print()
+
 if ch == 1:
     dob = input("Enter your DOB as DD/MM/YYYYY : ")
+    
     dob = [int(i) for i in dob.split("/")]
+    
     dob = Date(dob[0], dob[1], dob[2])
+    
     PD = input("Enter Present Day as DD/MM/YYYYY : ")
+    
     PD = [int(i) for i in PD.split("/")]
+    
     PD = Date(PD[0], PD[1], PD[2])
 
 # Function call
