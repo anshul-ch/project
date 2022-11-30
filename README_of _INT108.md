@@ -1,8 +1,6 @@
 # project
-# to create a program to find the number of days a person lived
 # Python3 program two find number of days a person lived
-# A date has day 'd', month
-# 'm' and year 'y'
+# A date has day 'd', month 'm' and year 'y'
 
     class Date:
         def __init__(self, d, m, y):
@@ -11,21 +9,20 @@
             self.y = y
 
 
-# To store number of days in
-# all months from January to Dec.
+# To store number of days in all months from January to Dec.
+ 
         monthDays = [31, 28, 31, 30, 31, 30,
                      31, 31, 30, 31, 30, 31]
 
 
-# This function counts number of
-# leap years before the given date
+# This function counts number of leap years before the given date
 
         def countLeapYears(d):
             years = d.y
 
-        # Check if the current year needs
-        # to be considered for the count
-        # of leap years or not
+        # Check if the current year needs to be considered for the count of leap years or not
+        
+        
             if d.m <= 2:
                 years -= 1
 
@@ -38,8 +35,7 @@
                 return ans
 
 
-# This function returns number of
-# days between two given dates
+# This function returns number of days between two given dates
 
         def getDifference(dt1, dt2):
             # COUNT TOTAL NUMBER OF DAYS
